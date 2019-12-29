@@ -1,0 +1,6 @@
+framework module Pods_Mobiles_catalog_app {
+  umbrella header "Pods-Mobiles catalog app-umbrella.h"
+
+  export *
+  module * { export * }
+}
