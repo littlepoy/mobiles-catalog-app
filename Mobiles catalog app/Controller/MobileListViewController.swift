@@ -10,9 +10,23 @@ import UIKit
 
 class MobileListViewController: UIViewController {
     
+    @IBOutlet weak var segment: UISegmentedControl!
+    @IBOutlet weak var sortButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     private var mobileList = [MobileList]()
     private let apiClient = ApiClient()
+    
+    @IBAction func sortButtonTouchUp(_ sender: UIBarButtonItem) {
+        print("touch sort")
+    }
+    
+    @IBAction func segmentValueChanged(_ sender: UISegmentedControl) {
+        if segment.selectedSegmentIndex == 0 {
+            print("seg 1")
+        } else if segment.selectedSegmentIndex == 1 {
+            print("seg 2")
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +64,7 @@ class MobileListViewController: UIViewController {
 }
 
 extension MobileListViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         mobileList.count
     }
@@ -58,7 +73,7 @@ extension MobileListViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MobileListViewCell") as! MobileListViewCell
         if (mobileList.count > 0) {
             let mobile = mobileList[indexPath.row]
-            
+            //
             cell.titleLabel.text = mobile.name
             cell.descriptionLabel.text = mobile.description
             cell.mobileImage.getImageFromWeb(imageUrlString: mobile.thumbImageURL)
@@ -68,6 +83,8 @@ extension MobileListViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("row", indexPath.row)
+    }
 }
 

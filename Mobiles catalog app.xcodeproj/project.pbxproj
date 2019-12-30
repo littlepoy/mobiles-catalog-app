@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC21A73F23B9C0C30072FF0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21A73E23B9C0C30072FF0A /* SceneDelegate.swift */; };
 		DC6DA12A23B8B52000C9459B /* MobileListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6DA12923B8B52000C9459B /* MobileListViewCell.xib */; };
 		DC6DA12C23B9043900C9459B /* MobileListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DA12B23B9043900C9459B /* MobileListViewCell.swift */; };
 		DC6DA12F23B9147A00C9459B /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DA12E23B9147A00C9459B /* ApiClient.swift */; };
@@ -14,7 +15,6 @@
 		DC6DA13423B9190800C9459B /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DA13323B9190800C9459B /* UIImageExtension.swift */; };
 		DC6DA13623B9269B00C9459B /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DA13523B9269B00C9459B /* UILabelExtension.swift */; };
 		DCCB80BA23B8AFA3000D2627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB80B923B8AFA3000D2627 /* AppDelegate.swift */; };
-		DCCB80BC23B8AFA3000D2627 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB80BB23B8AFA3000D2627 /* SceneDelegate.swift */; };
 		DCCB80BE23B8AFA3000D2627 /* MobileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB80BD23B8AFA3000D2627 /* MobileListViewController.swift */; };
 		DCCB80C123B8AFA4000D2627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCB80BF23B8AFA4000D2627 /* Main.storyboard */; };
 		DCCB80C323B8AFA6000D2627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCCB80C223B8AFA6000D2627 /* Assets.xcassets */; };
@@ -26,6 +26,7 @@
 		1CDB2E375C7F8DF9C9FF24CD /* Pods-Mobiles catalog app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobiles catalog app.release.xcconfig"; path = "Target Support Files/Pods-Mobiles catalog app/Pods-Mobiles catalog app.release.xcconfig"; sourceTree = "<group>"; };
 		9A592D9B539F4721568EB22E /* Pods-Mobiles catalog app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobiles catalog app.debug.xcconfig"; path = "Target Support Files/Pods-Mobiles catalog app/Pods-Mobiles catalog app.debug.xcconfig"; sourceTree = "<group>"; };
 		A6FCF3A7AD524E5E50BC247F /* Pods_Mobiles_catalog_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobiles_catalog_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC21A73E23B9C0C30072FF0A /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DC6DA12923B8B52000C9459B /* MobileListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MobileListViewCell.xib; sourceTree = "<group>"; };
 		DC6DA12B23B9043900C9459B /* MobileListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListViewCell.swift; sourceTree = "<group>"; };
 		DC6DA12E23B9147A00C9459B /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
@@ -34,7 +35,6 @@
 		DC6DA13523B9269B00C9459B /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		DCCB80B623B8AFA3000D2627 /* Mobiles catalog app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobiles catalog app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCB80B923B8AFA3000D2627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCCB80BB23B8AFA3000D2627 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DCCB80BD23B8AFA3000D2627 /* MobileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListViewController.swift; sourceTree = "<group>"; };
 		DCCB80C023B8AFA4000D2627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCCB80C223B8AFA6000D2627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 		DCCB80B823B8AFA3000D2627 /* Mobiles catalog app */ = {
 			isa = PBXGroup;
 			children = (
+				DC21A73E23B9C0C30072FF0A /* SceneDelegate.swift */,
 				DCCB80B923B8AFA3000D2627 /* AppDelegate.swift */,
-				DCCB80BB23B8AFA3000D2627 /* SceneDelegate.swift */,
 				DC6DA13223B918F000C9459B /* Extension */,
 				DC6DA12D23B912CF00C9459B /* Service */,
 				DC6DA12723B8B39900C9459B /* Model */,
@@ -279,8 +279,8 @@
 				DCCB80BA23B8AFA3000D2627 /* AppDelegate.swift in Sources */,
 				DC6DA13623B9269B00C9459B /* UILabelExtension.swift in Sources */,
 				DC6DA12C23B9043900C9459B /* MobileListViewCell.swift in Sources */,
-				DCCB80BC23B8AFA3000D2627 /* SceneDelegate.swift in Sources */,
 				DC6DA12F23B9147A00C9459B /* ApiClient.swift in Sources */,
+				DC21A73F23B9C0C30072FF0A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +428,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XBZD4U22ZP;
 				INFOPLIST_FILE = "Mobiles catalog app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,6 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XBZD4U22ZP;
 				INFOPLIST_FILE = "Mobiles catalog app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
