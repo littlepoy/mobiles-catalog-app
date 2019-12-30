@@ -21,6 +21,7 @@
 		DCCB80C123B8AFA4000D2627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCB80BF23B8AFA4000D2627 /* Main.storyboard */; };
 		DCCB80C323B8AFA6000D2627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCCB80C223B8AFA6000D2627 /* Assets.xcassets */; };
 		DCCB80C623B8AFA6000D2627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCB80C423B8AFA6000D2627 /* LaunchScreen.storyboard */; };
+		DCE8D98123BA540A00E00E9B /* MobileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8D98023BA540A00E00E9B /* MobileImage.swift */; };
 		F3AC48BF1262DFA0FF9FF924 /* Pods_Mobiles_catalog_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FCF3A7AD524E5E50BC247F /* Pods_Mobiles_catalog_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		DCCB80C223B8AFA6000D2627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCCB80C523B8AFA6000D2627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCCB80C723B8AFA6000D2627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE8D98023BA540A00E00E9B /* MobileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				DC6DA13023B9155700C9459B /* MobileList.swift */,
+				DCE8D98023BA540A00E00E9B /* MobileImage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				DC0ACB6323BA067E002C8985 /* MobileCollectionViewCell.swift in Sources */,
 				DC6DA13423B9190800C9459B /* UIImageExtension.swift in Sources */,
 				DCCB80BA23B8AFA3000D2627 /* AppDelegate.swift in Sources */,
+				DCE8D98123BA540A00E00E9B /* MobileImage.swift in Sources */,
 				DC6DA13623B9269B00C9459B /* UILabelExtension.swift in Sources */,
 				DC0ACB6123B9FD85002C8985 /* MobileDetailsViewController.swift in Sources */,
 				DC6DA12C23B9043900C9459B /* MobileListViewCell.swift in Sources */,

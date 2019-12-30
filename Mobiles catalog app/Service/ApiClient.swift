@@ -25,13 +25,13 @@ class ApiClient {
         }
     }
     
-    func requestMobileImages(id: String?, completion: @escaping ([MobileList]?, Error?)->()) {
+    func requestMobileImages(id: Int?, completion: @escaping ([MobileImage]?, Error?)->()) {
         
         guard let id = id else {
             return
         }
         
-        let url = baseUrl + "/" + id + "/images"
+        let url = baseUrl + "/" + String(id) + "/images"
         
         Alamofire.request(url, method: .get)
             .validate(statusCode: 200..<299)
@@ -45,8 +45,8 @@ class ApiClient {
         }
     }
     
-    func parseJSON(data : Data?, completion: @escaping ([MobileList]?, Error?)->()) {
-        var decodeData: [MobileList]?
+    func parseJSON<T> (data : Data?, completion: @escaping ([T]?, Error?)->()) where T : Codable {
+        var decodeData: [T]?
         var error: Error?
         guard let data = data else {
             return
@@ -57,7 +57,7 @@ class ApiClient {
         }
         
         do {
-            decodeData = try JSONDecoder().decode(Array<MobileList>.self, from: data)
+            decodeData = try JSONDecoder().decode(Array<T>.self, from: data)
         } catch let err {
             error = err
             debugPrint(err)

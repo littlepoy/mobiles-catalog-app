@@ -111,7 +111,8 @@ extension MobileListViewController: UITableViewDelegate, UITableViewDataSource {
         print("row", indexPath.row)
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "mobileDetailsView")
+        let vc = storyboard.instantiateViewController(withIdentifier: "mobileDetailsView") as! MobileDetailsViewController
+        vc.mobileDetail = mobileList[indexPath.row]
         self.navigationController!.pushViewController(vc, animated: true)
     }
 }

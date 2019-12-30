@@ -11,34 +11,39 @@ import UIKit
 extension UIImageView {
     
     func getImageFromWeb(imageUrlString: String?) {
-        guard let imageUrlString = imageUrlString else {
-            return
-        }
-        
-        guard let url = URL(string: imageUrlString) else {
-            return
-        }
-        
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard error == nil else {
-                print("Error: \(String(describing: error))")
-                return
+        if let imageUrlString = imageUrlString {
+            let url: URL?
+            
+            if imageUrlString.hasPrefix("https://") || imageUrlString.hasPrefix("http://") {
+                url = URL(string: imageUrlString)
+            } else {
+                url = URL(string: "https://" + imageUrlString)
             }
-            guard response != nil else {
-                print("no response")
-                return
-            }
-            guard let data = data else {
-                print("no data")
+            
+            guard let _url = url else {
                 return
             }
             
-            DispatchQueue.main.async {
-                self.image = UIImage(data: data)
+            let task = URLSession.shared.dataTask(with: _url) { (data, response, error) in
+                guard error == nil else {
+                    print("Error: \(String(describing: error))")
+                    return
+                }
+                guard response != nil else {
+                    print("no response")
+                    return
+                }
+                guard let data = data else {
+                    print("no data")
+                    return
+                }
+                
+                DispatchQueue.main.async {
+                    self.image = UIImage(data: data)
+                }
             }
+            task.resume()
         }
-        
-        task.resume()
     }
     
 }
