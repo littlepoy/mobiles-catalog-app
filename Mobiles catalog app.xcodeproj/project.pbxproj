@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0ACB6123B9FD85002C8985 /* MobileDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0ACB6023B9FD85002C8985 /* MobileDetailsViewController.swift */; };
+		DC0ACB6323BA067E002C8985 /* MobileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0ACB6223BA067E002C8985 /* MobileCollectionViewCell.swift */; };
 		DC21A73F23B9C0C30072FF0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21A73E23B9C0C30072FF0A /* SceneDelegate.swift */; };
 		DC6DA12A23B8B52000C9459B /* MobileListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6DA12923B8B52000C9459B /* MobileListViewCell.xib */; };
 		DC6DA12C23B9043900C9459B /* MobileListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DA12B23B9043900C9459B /* MobileListViewCell.swift */; };
@@ -26,6 +28,8 @@
 		1CDB2E375C7F8DF9C9FF24CD /* Pods-Mobiles catalog app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobiles catalog app.release.xcconfig"; path = "Target Support Files/Pods-Mobiles catalog app/Pods-Mobiles catalog app.release.xcconfig"; sourceTree = "<group>"; };
 		9A592D9B539F4721568EB22E /* Pods-Mobiles catalog app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobiles catalog app.debug.xcconfig"; path = "Target Support Files/Pods-Mobiles catalog app/Pods-Mobiles catalog app.debug.xcconfig"; sourceTree = "<group>"; };
 		A6FCF3A7AD524E5E50BC247F /* Pods_Mobiles_catalog_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobiles_catalog_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0ACB6023B9FD85002C8985 /* MobileDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsViewController.swift; sourceTree = "<group>"; };
+		DC0ACB6223BA067E002C8985 /* MobileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC21A73E23B9C0C30072FF0A /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DC6DA12923B8B52000C9459B /* MobileListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MobileListViewCell.xib; sourceTree = "<group>"; };
 		DC6DA12B23B9043900C9459B /* MobileListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListViewCell.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				DCCB80BD23B8AFA3000D2627 /* MobileListViewController.swift */,
+				DC0ACB6023B9FD85002C8985 /* MobileDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 			children = (
 				DC6DA12923B8B52000C9459B /* MobileListViewCell.xib */,
 				DC6DA12B23B9043900C9459B /* MobileListViewCell.swift */,
+				DC0ACB6223BA067E002C8985 /* MobileCollectionViewCell.swift */,
 			);
 			path = ViewCell;
 			sourceTree = "<group>";
@@ -275,9 +281,11 @@
 			files = (
 				DCCB80BE23B8AFA3000D2627 /* MobileListViewController.swift in Sources */,
 				DC6DA13123B9155700C9459B /* MobileList.swift in Sources */,
+				DC0ACB6323BA067E002C8985 /* MobileCollectionViewCell.swift in Sources */,
 				DC6DA13423B9190800C9459B /* UIImageExtension.swift in Sources */,
 				DCCB80BA23B8AFA3000D2627 /* AppDelegate.swift in Sources */,
 				DC6DA13623B9269B00C9459B /* UILabelExtension.swift in Sources */,
+				DC0ACB6123B9FD85002C8985 /* MobileDetailsViewController.swift in Sources */,
 				DC6DA12C23B9043900C9459B /* MobileListViewCell.swift in Sources */,
 				DC6DA12F23B9147A00C9459B /* ApiClient.swift in Sources */,
 				DC21A73F23B9C0C30072FF0A /* SceneDelegate.swift in Sources */,
