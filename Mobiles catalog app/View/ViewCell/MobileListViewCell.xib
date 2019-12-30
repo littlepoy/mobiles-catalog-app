@@ -55,19 +55,17 @@
                         <rect key="frame" x="13" y="12" width="95" height="96"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="95" id="3Xc-wS-QrS"/>
-                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="96" id="wiS-U6-Was"/>
+                            <constraint firstAttribute="height" constant="96" id="LpE-VH-5dy"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Okv-VM-Wj9" firstAttribute="top" secondItem="gCa-1d-EL4" secondAttribute="bottom" constant="3" id="9gc-QN-lzz"/>
-                    <constraint firstAttribute="bottom" secondItem="eqr-dE-G71" secondAttribute="bottom" constant="12" id="DpR-fb-y5W"/>
                     <constraint firstItem="LAM-zM-Aon" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PbB-JL-KnH" secondAttribute="trailing" constant="5" id="HWK-lc-mDP"/>
                     <constraint firstAttribute="bottom" secondItem="PbB-JL-KnH" secondAttribute="bottom" constant="10" id="K9X-zU-2hT"/>
                     <constraint firstItem="gCa-1d-EL4" firstAttribute="leading" secondItem="eqr-dE-G71" secondAttribute="trailing" constant="16" id="PGK-Zx-4qR"/>
                     <constraint firstItem="gCa-1d-EL4" firstAttribute="top" secondItem="Y9G-Xd-ziY" secondAttribute="top" constant="10" id="REf-3h-fAG"/>
                     <constraint firstItem="eqr-dE-G71" firstAttribute="leading" secondItem="Y9G-Xd-ziY" secondAttribute="leading" constant="13" id="SRh-Yx-zIS"/>
-                    <constraint firstItem="eqr-dE-G71" firstAttribute="top" secondItem="Y9G-Xd-ziY" secondAttribute="top" constant="12" id="Tbm-9W-agQ"/>
                     <constraint firstAttribute="trailing" secondItem="LAM-zM-Aon" secondAttribute="trailing" constant="43" id="U7s-wQ-MNo"/>
                     <constraint firstItem="PbB-JL-KnH" firstAttribute="top" secondItem="Okv-VM-Wj9" secondAttribute="bottom" constant="4" id="VJZ-x5-UkR"/>
                     <constraint firstItem="tHq-gv-Trl" firstAttribute="top" secondItem="Y9G-Xd-ziY" secondAttribute="top" constant="10" id="Xo4-w5-Au9"/>
@@ -76,6 +74,7 @@
                     <constraint firstItem="Okv-VM-Wj9" firstAttribute="leading" secondItem="eqr-dE-G71" secondAttribute="trailing" constant="16" id="jRK-nZ-v0N"/>
                     <constraint firstAttribute="trailing" secondItem="tHq-gv-Trl" secondAttribute="trailing" constant="20" id="kOo-QR-RsS"/>
                     <constraint firstAttribute="trailing" secondItem="Okv-VM-Wj9" secondAttribute="trailing" constant="43" id="qZV-GI-AG9"/>
+                    <constraint firstItem="eqr-dE-G71" firstAttribute="centerY" secondItem="Y9G-Xd-ziY" secondAttribute="centerY" id="sN4-EU-XlC"/>
                     <constraint firstItem="PbB-JL-KnH" firstAttribute="leading" secondItem="eqr-dE-G71" secondAttribute="trailing" constant="16" id="yCI-QM-2hL"/>
                 </constraints>
             </tableViewCellContentView>

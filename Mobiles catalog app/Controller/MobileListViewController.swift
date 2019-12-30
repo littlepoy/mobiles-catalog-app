@@ -60,20 +60,36 @@ class MobileListViewController: UIViewController {
     
     //MARK: - show sort alert
     private func showSortAlert() {
-        let alert = UIAlertController(title: "Sort", message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: Constants.String.sort, message: nil, preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Price low to high", style: .default, handler: { (action: UIAlertAction!) in
-            print("low to high")
+        alert.addAction(UIAlertAction(title: Constants.String.priceLowToHigh, style: .default, handler: { (action: UIAlertAction!) in
+            self.sortData(by: Constants.String.priceLowToHigh)
         }))
-        alert.addAction(UIAlertAction(title: "Price high to low", style: .default, handler: { (action: UIAlertAction!) in
-            print("high to low")
+        alert.addAction(UIAlertAction(title: Constants.String.priceHighToLow, style: .default, handler: { (action: UIAlertAction!) in
+            self.sortData(by: Constants.String.priceHighToLow)
         }))
-        alert.addAction(UIAlertAction(title: "Rating", style: .default, handler: { (action: UIAlertAction!) in
-            print("rating")
+        alert.addAction(UIAlertAction(title: Constants.String.rating, style: .default, handler: { (action: UIAlertAction!) in
+            self.sortData(by: Constants.String.rating)
         }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: Constants.String.cancel, style: .cancel, handler: nil))
         
         self.present(alert, animated: true)
+    }
+    
+    //MARK: - sort data
+    private func sortData(by: String) {
+        switch by {
+        case Constants.String.priceLowToHigh:
+            self.mobileList = mobileList.sorted() { $0.price < $1.price }
+        case Constants.String.priceHighToLow:
+            self.mobileList = mobileList.sorted() { $0.price > $1.price }
+        case Constants.String.rating:
+            self.mobileList = mobileList.sorted() { $0.rating > $1.rating }
+        default:
+            break
+        }
+        
+        tableView.reloadData();
     }
     
     //MARK: - segment Value Changed

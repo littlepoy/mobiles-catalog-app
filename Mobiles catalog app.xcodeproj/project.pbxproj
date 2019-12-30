@@ -16,6 +16,7 @@
 		DC6DA13123B9155700C9459B /* MobileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DA13023B9155700C9459B /* MobileList.swift */; };
 		DC6DA13423B9190800C9459B /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DA13323B9190800C9459B /* UIImageExtension.swift */; };
 		DC6DA13623B9269B00C9459B /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DA13523B9269B00C9459B /* UILabelExtension.swift */; };
+		DCB267B923BA68930089ECB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB267B823BA68930089ECB6 /* Constants.swift */; };
 		DCCB80BA23B8AFA3000D2627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB80B923B8AFA3000D2627 /* AppDelegate.swift */; };
 		DCCB80BE23B8AFA3000D2627 /* MobileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB80BD23B8AFA3000D2627 /* MobileListViewController.swift */; };
 		DCCB80C123B8AFA4000D2627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCB80BF23B8AFA4000D2627 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		DC6DA13023B9155700C9459B /* MobileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileList.swift; sourceTree = "<group>"; };
 		DC6DA13323B9190800C9459B /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		DC6DA13523B9269B00C9459B /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		DCB267B823BA68930089ECB6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DCCB80B623B8AFA3000D2627 /* Mobiles catalog app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobiles catalog app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCB80B923B8AFA3000D2627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCCB80BD23B8AFA3000D2627 /* MobileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			children = (
 				DC21A73E23B9C0C30072FF0A /* SceneDelegate.swift */,
 				DCCB80B923B8AFA3000D2627 /* AppDelegate.swift */,
+				DCB267B823BA68930089ECB6 /* Constants.swift */,
 				DC6DA13223B918F000C9459B /* Extension */,
 				DC6DA12D23B912CF00C9459B /* Service */,
 				DC6DA12723B8B39900C9459B /* Model */,
@@ -293,6 +296,7 @@
 				DC6DA12C23B9043900C9459B /* MobileListViewCell.swift in Sources */,
 				DC6DA12F23B9147A00C9459B /* ApiClient.swift in Sources */,
 				DC21A73F23B9C0C30072FF0A /* SceneDelegate.swift in Sources */,
+				DCB267B923BA68930089ECB6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
