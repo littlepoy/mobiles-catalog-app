@@ -20,7 +20,7 @@ class MobileDetailsViewController: UIViewController {
     
     var mobileDetail: MobileList? {
         didSet {
-            guard let mobileDetail = mobileDetail else {
+            guard mobileDetail != nil else {
                 return
             }
             

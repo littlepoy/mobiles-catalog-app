@@ -41,6 +41,7 @@
                             <constraint firstAttribute="height" constant="22" id="hPT-14-Ggw"/>
                         </constraints>
                         <state key="normal" image="star"/>
+                        <state key="selected" image="star-filled"/>
                         <connections>
                             <action selector="favoriteButtonOnClick:" destination="Oo0-Qt-pS6" eventType="touchUpInside" id="cO3-f5-sN5"/>
                         </connections>
@@ -80,6 +81,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="descriptionLabel" destination="Okv-VM-Wj9" id="jz3-18-srZ"/>
+                <outlet property="favoriteButton" destination="tHq-gv-Trl" id="bD4-KH-Xs8"/>
                 <outlet property="mobileImage" destination="eqr-dE-G71" id="mPS-lL-51C"/>
                 <outlet property="priceLabel" destination="PbB-JL-KnH" id="1Gk-LB-ugl"/>
                 <outlet property="ratingLabel" destination="LAM-zM-Aon" id="cb2-V8-Ifb"/>
@@ -90,5 +92,6 @@
     </objects>
     <resources>
         <image name="star" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="star-filled" width="33.333332061767578" height="33.333332061767578"/>
     </resources>
 </document>

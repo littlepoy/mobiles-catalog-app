@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class MobileListViewController: UIViewController {
     
     @IBOutlet weak var segment: UISegmentedControl!
@@ -15,6 +17,7 @@ class MobileListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     private var mobileList = [MobileList]()
     private let apiClient = ApiClient()
+//    private
     
     //MARK: - viewDidLoad
     override func viewDidLoad() {
@@ -119,6 +122,8 @@ extension MobileListViewController: UITableViewDelegate, UITableViewDataSource {
             cell.mobileImage.getImageFromWeb(imageUrlString: mobile.thumbImageURL)
             cell.priceLabel.priceFormat(price: mobile.price)
             cell.ratingLabel.ratingFormat(rating: mobile.rating)
+            cell.delegate = self
+            cell.mobileId = mobile.id
         }
         return cell
     }
@@ -131,5 +136,25 @@ extension MobileListViewController: UITableViewDelegate, UITableViewDataSource {
         vc.mobileDetail = mobileList[indexPath.row]
         self.navigationController!.pushViewController(vc, animated: true)
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        if segment.selectedSegmentIndex == 1 {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            // handle delete (by removing the data from your array and updating the tableview)
+            print("deleted")
+        }
+    }
 }
 
+extension MobileListViewController : MobileListViewDelegate {
+    func touchUpFavButton(mobileId: Int) {
+        print("fav id ", mobileId)
+    }
+}

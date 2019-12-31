@@ -82,8 +82,8 @@
 		DC6DA12523B8B37E00C9459B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DCCB80BD23B8AFA3000D2627 /* MobileListViewController.swift */,
 				DC0ACB6023B9FD85002C8985 /* MobileDetailsViewController.swift */,
+				DCCB80BD23B8AFA3000D2627 /* MobileListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
