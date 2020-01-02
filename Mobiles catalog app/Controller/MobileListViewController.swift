@@ -17,7 +17,7 @@ class MobileListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     private var mobileList = [MobileList]()
     private let apiClient = ApiClient()
-//    private
+    private var favoriteList = [MobileList]()
     
     //MARK: - viewDidLoad
     override func viewDidLoad() {
@@ -57,7 +57,6 @@ class MobileListViewController: UIViewController {
     
     //MARK: - sort button TouchUp
     @IBAction func sortButtonTouchUp(_ sender: UIBarButtonItem) {
-        print("touch sort")
         showSortAlert()
     }
     
@@ -84,10 +83,13 @@ class MobileListViewController: UIViewController {
         switch by {
         case Constants.String.priceLowToHigh:
             self.mobileList = mobileList.sorted() { $0.price < $1.price }
+            self.favoriteList = favoriteList.sorted() { $0.price < $1.price }
         case Constants.String.priceHighToLow:
             self.mobileList = mobileList.sorted() { $0.price > $1.price }
+            self.favoriteList = favoriteList.sorted() { $0.price > $1.price }
         case Constants.String.rating:
             self.mobileList = mobileList.sorted() { $0.rating > $1.rating }
+            self.favoriteList = favoriteList.sorted() { $0.rating > $1.rating }
         default:
             break
         }
@@ -97,11 +99,7 @@ class MobileListViewController: UIViewController {
     
     //MARK: - segment Value Changed
     @IBAction func segmentValueChanged(_ sender: UISegmentedControl) {
-        if segment.selectedSegmentIndex == 0 {
-            print("seg 1")
-        } else if segment.selectedSegmentIndex == 1 {
-            print("seg 2")
-        }
+        tableView.reloadData()
     }
 }
 
@@ -109,28 +107,47 @@ class MobileListViewController: UIViewController {
 extension MobileListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        mobileList.count
+        switch segment.selectedSegmentIndex {
+        case 0: return mobileList.count
+        case 1: return favoriteList.count
+        default: return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MobileListViewCell") as! MobileListViewCell
-        if (mobileList.count > 0) {
-            let mobile = mobileList[indexPath.row]
-            //
-            cell.titleLabel.text = mobile.name
-            cell.descriptionLabel.text = mobile.description
-            cell.mobileImage.getImageFromWeb(imageUrlString: mobile.thumbImageURL)
-            cell.priceLabel.priceFormat(price: mobile.price)
-            cell.ratingLabel.ratingFormat(rating: mobile.rating)
-            cell.delegate = self
-            cell.mobileId = mobile.id
+        
+        if segment.selectedSegmentIndex == 0 {
+            if (mobileList.count > 0) {
+                let mobile = mobileList[indexPath.row]
+                cell.favoriteButton.isHidden = false
+                cell.favoriteButton.isSelected = favoriteList.contains(where: { $0.id == mobile.id })
+                cell.titleLabel.text = mobile.name
+                cell.descriptionLabel.text = mobile.description
+                cell.mobileImage.getImageFromWeb(imageUrlString: mobile.thumbImageURL)
+                cell.priceLabel.priceFormat(price: mobile.price)
+                cell.ratingLabel.ratingFormat(rating: mobile.rating)
+                cell.delegate = self
+                cell.index = indexPath.row
+            }
+        } else if segment.selectedSegmentIndex == 1 {
+            if (favoriteList.count > 0) {
+                
+                let favorite = favoriteList[indexPath.row]
+                cell.favoriteButton.isHidden = true
+                cell.titleLabel.text = favorite.name
+                cell.descriptionLabel.text = favorite.description
+                cell.mobileImage.getImageFromWeb(imageUrlString: favorite.thumbImageURL)
+                cell.priceLabel.priceFormat(price: favorite.price)
+                cell.ratingLabel.ratingFormat(rating: favorite.rating)
+                cell.delegate = self
+                cell.index = indexPath.row
+            }
         }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("row", indexPath.row)
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "mobileDetailsView") as! MobileDetailsViewController
         vc.mobileDetail = mobileList[indexPath.row]
@@ -144,17 +161,21 @@ extension MobileListViewController: UITableViewDelegate, UITableViewDataSource {
             return false
         }
     }
-
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete) {
-            // handle delete (by removing the data from your array and updating the tableview)
-            print("deleted")
+            favoriteList.remove(at: indexPath.row)
+            tableView.reloadData()
         }
     }
 }
 
 extension MobileListViewController : MobileListViewDelegate {
-    func touchUpFavButton(mobileId: Int) {
-        print("fav id ", mobileId)
+    func touchUpFavButton(index: Int) {
+        if let indexElement = favoriteList.firstIndex(where: { $0.id == mobileList[index].id }) {
+            favoriteList.remove(at: indexElement)
+        } else {
+            favoriteList.append(mobileList[index])
+        }
     }
 }

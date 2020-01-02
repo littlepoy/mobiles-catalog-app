@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol MobileListViewDelegate {
-    func touchUpFavButton(mobileId: Int)
+    func touchUpFavButton(index: Int)
 }
 
 class MobileListViewCell: UITableViewCell {
@@ -22,7 +22,7 @@ class MobileListViewCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     var delegate: MobileListViewDelegate?
-    var mobileId: Int?
+    var index: Int?
     
     @IBAction func favoriteButtonOnClick(_ sender: UIButton) {
         print("Fav Button tab")
@@ -33,8 +33,8 @@ class MobileListViewCell: UITableViewCell {
           favoriteButton.isSelected = true
         }
         
-        if let mobileId = mobileId {
-            delegate?.touchUpFavButton(mobileId: mobileId)
+        if let index = index {
+            delegate?.touchUpFavButton(index: index)
         }
     }
 }
