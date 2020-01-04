@@ -47,6 +47,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Gxa-pS-XuB">
+                        <barButtonItem key="backBarButtonItem" title=" " id="YGY-td-j5J"/>
                         <barButtonItem key="rightBarButtonItem" title="Sort" id="1NI-8X-KcC">
                             <connections>
                                 <action selector="sortButtonTouchUp:" destination="BYZ-38-t0r" id="UXg-lH-qmF"/>
@@ -112,7 +113,7 @@
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3oK-JC-UGQ">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3oK-JC-UGQ">
                                         <rect key="frame" x="0.0" y="200" width="375" height="467"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>

@@ -43,6 +43,7 @@ class MobileDetailsViewController: UIViewController {
             self.ratingLabel.ratingFormat(rating: mobileDetail.rating)
             self.priceLabel.priceFormat(price: mobileDetail.price)
             self.descriptionLabel.text = mobileDetail.description
+            self.title = mobileDetail.name
         }
     }
     
