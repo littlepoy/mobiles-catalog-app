@@ -3,27 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0ACB6123B9FD85002C8985 /* MobileDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0ACB6023B9FD85002C8985 /* MobileDetailsViewController.swift */; };
+		DC0ACB6323BA067E002C8985 /* MobileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0ACB6223BA067E002C8985 /* MobileCollectionViewCell.swift */; };
+		DC21A73F23B9C0C30072FF0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21A73E23B9C0C30072FF0A /* SceneDelegate.swift */; };
+		DC6DA12A23B8B52000C9459B /* MobileListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC6DA12923B8B52000C9459B /* MobileListViewCell.xib */; };
+		DC6DA12C23B9043900C9459B /* MobileListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DA12B23B9043900C9459B /* MobileListViewCell.swift */; };
+		DC6DA12F23B9147A00C9459B /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DA12E23B9147A00C9459B /* ApiClient.swift */; };
+		DC6DA13123B9155700C9459B /* MobileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DA13023B9155700C9459B /* MobileList.swift */; };
+		DC6DA13423B9190800C9459B /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DA13323B9190800C9459B /* UIImageExtension.swift */; };
+		DC6DA13623B9269B00C9459B /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DA13523B9269B00C9459B /* UILabelExtension.swift */; };
+		DCB267B923BA68930089ECB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB267B823BA68930089ECB6 /* Constants.swift */; };
 		DCCB80BA23B8AFA3000D2627 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB80B923B8AFA3000D2627 /* AppDelegate.swift */; };
-		DCCB80BC23B8AFA3000D2627 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB80BB23B8AFA3000D2627 /* SceneDelegate.swift */; };
-		DCCB80BE23B8AFA3000D2627 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB80BD23B8AFA3000D2627 /* ViewController.swift */; };
+		DCCB80BE23B8AFA3000D2627 /* MobileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB80BD23B8AFA3000D2627 /* MobileListViewController.swift */; };
 		DCCB80C123B8AFA4000D2627 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCB80BF23B8AFA4000D2627 /* Main.storyboard */; };
 		DCCB80C323B8AFA6000D2627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCCB80C223B8AFA6000D2627 /* Assets.xcassets */; };
 		DCCB80C623B8AFA6000D2627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCCB80C423B8AFA6000D2627 /* LaunchScreen.storyboard */; };
+		DCE8D98123BA540A00E00E9B /* MobileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8D98023BA540A00E00E9B /* MobileImage.swift */; };
+		F3AC48BF1262DFA0FF9FF924 /* Pods_Mobiles_catalog_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FCF3A7AD524E5E50BC247F /* Pods_Mobiles_catalog_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CDB2E375C7F8DF9C9FF24CD /* Pods-Mobiles catalog app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobiles catalog app.release.xcconfig"; path = "Target Support Files/Pods-Mobiles catalog app/Pods-Mobiles catalog app.release.xcconfig"; sourceTree = "<group>"; };
+		9A592D9B539F4721568EB22E /* Pods-Mobiles catalog app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobiles catalog app.debug.xcconfig"; path = "Target Support Files/Pods-Mobiles catalog app/Pods-Mobiles catalog app.debug.xcconfig"; sourceTree = "<group>"; };
+		A6FCF3A7AD524E5E50BC247F /* Pods_Mobiles_catalog_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobiles_catalog_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0ACB6023B9FD85002C8985 /* MobileDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsViewController.swift; sourceTree = "<group>"; };
+		DC0ACB6223BA067E002C8985 /* MobileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC21A73E23B9C0C30072FF0A /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC6DA12923B8B52000C9459B /* MobileListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MobileListViewCell.xib; sourceTree = "<group>"; };
+		DC6DA12B23B9043900C9459B /* MobileListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListViewCell.swift; sourceTree = "<group>"; };
+		DC6DA12E23B9147A00C9459B /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		DC6DA13023B9155700C9459B /* MobileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileList.swift; sourceTree = "<group>"; };
+		DC6DA13323B9190800C9459B /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		DC6DA13523B9269B00C9459B /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		DCB267B823BA68930089ECB6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DCCB80B623B8AFA3000D2627 /* Mobiles catalog app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobiles catalog app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCB80B923B8AFA3000D2627 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCCB80BB23B8AFA3000D2627 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DCCB80BD23B8AFA3000D2627 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCCB80BD23B8AFA3000D2627 /* MobileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListViewController.swift; sourceTree = "<group>"; };
 		DCCB80C023B8AFA4000D2627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCCB80C223B8AFA6000D2627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCCB80C523B8AFA6000D2627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCCB80C723B8AFA6000D2627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE8D98023BA540A00E00E9B /* MobileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,91 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3AC48BF1262DFA0FF9FF924 /* Pods_Mobiles_catalog_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A25E79FE7C9C61211059D2F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6FCF3A7AD524E5E50BC247F /* Pods_Mobiles_catalog_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE8DFEE6679C672428DB0C15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A592D9B539F4721568EB22E /* Pods-Mobiles catalog app.debug.xcconfig */,
+				1CDB2E375C7F8DF9C9FF24CD /* Pods-Mobiles catalog app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC6DA12523B8B37E00C9459B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC0ACB6023B9FD85002C8985 /* MobileDetailsViewController.swift */,
+				DCCB80BD23B8AFA3000D2627 /* MobileListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DC6DA12623B8B38E00C9459B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC6DA12823B8B4AA00C9459B /* ViewCell */,
+				DCCB80BF23B8AFA4000D2627 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC6DA12723B8B39900C9459B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC6DA13023B9155700C9459B /* MobileList.swift */,
+				DCE8D98023BA540A00E00E9B /* MobileImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC6DA12823B8B4AA00C9459B /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DC6DA12923B8B52000C9459B /* MobileListViewCell.xib */,
+				DC6DA12B23B9043900C9459B /* MobileListViewCell.swift */,
+				DC0ACB6223BA067E002C8985 /* MobileCollectionViewCell.swift */,
+			);
+			path = ViewCell;
+			sourceTree = "<group>";
+		};
+		DC6DA12D23B912CF00C9459B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DC6DA12E23B9147A00C9459B /* ApiClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DC6DA13223B918F000C9459B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DC6DA13323B9190800C9459B /* UIImageExtension.swift */,
+				DC6DA13523B9269B00C9459B /* UILabelExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		DCCB80AD23B8AFA3000D2627 = {
 			isa = PBXGroup;
 			children = (
 				DCCB80B823B8AFA3000D2627 /* Mobiles catalog app */,
 				DCCB80B723B8AFA3000D2627 /* Products */,
+				AE8DFEE6679C672428DB0C15 /* Pods */,
+				A25E79FE7C9C61211059D2F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +154,14 @@
 		DCCB80B823B8AFA3000D2627 /* Mobiles catalog app */ = {
 			isa = PBXGroup;
 			children = (
+				DC21A73E23B9C0C30072FF0A /* SceneDelegate.swift */,
 				DCCB80B923B8AFA3000D2627 /* AppDelegate.swift */,
-				DCCB80BB23B8AFA3000D2627 /* SceneDelegate.swift */,
-				DCCB80BD23B8AFA3000D2627 /* ViewController.swift */,
-				DCCB80BF23B8AFA4000D2627 /* Main.storyboard */,
+				DCB267B823BA68930089ECB6 /* Constants.swift */,
+				DC6DA13223B918F000C9459B /* Extension */,
+				DC6DA12D23B912CF00C9459B /* Service */,
+				DC6DA12723B8B39900C9459B /* Model */,
+				DC6DA12623B8B38E00C9459B /* View */,
+				DC6DA12523B8B37E00C9459B /* Controller */,
 				DCCB80C223B8AFA6000D2627 /* Assets.xcassets */,
 				DCCB80C423B8AFA6000D2627 /* LaunchScreen.storyboard */,
 				DCCB80C723B8AFA6000D2627 /* Info.plist */,
@@ -74,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCCB80CA23B8AFA6000D2627 /* Build configuration list for PBXNativeTarget "Mobiles catalog app" */;
 			buildPhases = (
+				94FE551E4CD37D6DF5B1947C /* [CP] Check Pods Manifest.lock */,
 				DCCB80B223B8AFA3000D2627 /* Sources */,
 				DCCB80B323B8AFA3000D2627 /* Frameworks */,
 				DCCB80B423B8AFA3000D2627 /* Resources */,
+				96FCC7CC4556EEF57971A4CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,20 +231,72 @@
 			files = (
 				DCCB80C623B8AFA6000D2627 /* LaunchScreen.storyboard in Resources */,
 				DCCB80C323B8AFA6000D2627 /* Assets.xcassets in Resources */,
+				DC6DA12A23B8B52000C9459B /* MobileListViewCell.xib in Resources */,
 				DCCB80C123B8AFA4000D2627 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94FE551E4CD37D6DF5B1947C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mobiles catalog app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96FCC7CC4556EEF57971A4CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mobiles catalog app/Pods-Mobiles catalog app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mobiles catalog app/Pods-Mobiles catalog app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mobiles catalog app/Pods-Mobiles catalog app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DCCB80B223B8AFA3000D2627 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCCB80BE23B8AFA3000D2627 /* ViewController.swift in Sources */,
+				DCCB80BE23B8AFA3000D2627 /* MobileListViewController.swift in Sources */,
+				DC6DA13123B9155700C9459B /* MobileList.swift in Sources */,
+				DC0ACB6323BA067E002C8985 /* MobileCollectionViewCell.swift in Sources */,
+				DC6DA13423B9190800C9459B /* UIImageExtension.swift in Sources */,
 				DCCB80BA23B8AFA3000D2627 /* AppDelegate.swift in Sources */,
-				DCCB80BC23B8AFA3000D2627 /* SceneDelegate.swift in Sources */,
+				DCE8D98123BA540A00E00E9B /* MobileImage.swift in Sources */,
+				DC6DA13623B9269B00C9459B /* UILabelExtension.swift in Sources */,
+				DC0ACB6123B9FD85002C8985 /* MobileDetailsViewController.swift in Sources */,
+				DC6DA12C23B9043900C9459B /* MobileListViewCell.swift in Sources */,
+				DC6DA12F23B9147A00C9459B /* ApiClient.swift in Sources */,
+				DC21A73F23B9C0C30072FF0A /* SceneDelegate.swift in Sources */,
+				DCB267B923BA68930089ECB6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +438,13 @@
 		};
 		DCCB80CB23B8AFA6000D2627 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A592D9B539F4721568EB22E /* Pods-Mobiles catalog app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XBZD4U22ZP;
 				INFOPLIST_FILE = "Mobiles catalog app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +458,13 @@
 		};
 		DCCB80CC23B8AFA6000D2627 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CDB2E375C7F8DF9C9FF24CD /* Pods-Mobiles catalog app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XBZD4U22ZP;
 				INFOPLIST_FILE = "Mobiles catalog app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
