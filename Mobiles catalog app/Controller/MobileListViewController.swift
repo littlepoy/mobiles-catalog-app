@@ -45,9 +45,6 @@ class MobileListViewController: UIViewController {
                 return
             }
             
-            print(type(of: results))
-            print(results)
-            
             weakSelf.mobileList = results
             
             weakSelf.tableView.reloadData()
